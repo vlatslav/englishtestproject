@@ -1,4 +1,5 @@
 ﻿using EFCTesting.DataModels;
+using EFCTesting.Interfaces;
 using EFCTesting.Repository;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace EFCTesting.UOW
         private EnglishContext _context;
         public IAnswerRepository answerRepository;
         public IQuestionRepository questionRepository;
+        public IUserRepository userRepository;
+        public ITestRepository testRepository;
         public UnitOfWork(EnglishContext context)
         {
             _context = context;
@@ -38,6 +41,28 @@ namespace EFCTesting.UOW
                     questionRepository = new QuestionRepository(_context);
                 }
                 return questionRepository;
+            }
+        }
+        public IUserRepository UserRepository
+        {
+            get
+            {
+                if (userRepository is null)
+                {
+                    userRepository = new UserRepository(_context);
+                }
+                return userRepository;
+            }
+        }
+        public ITestRepository TestRepository
+        {
+            get
+            {
+                if (testRepository is null)
+                {
+                    testRepository = new TestRepository(_context);
+                }
+                return testRepository;
             }
         }
 

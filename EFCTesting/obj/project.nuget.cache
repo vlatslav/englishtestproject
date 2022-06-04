@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ENIBRJzi4UNp5DLxqi6hhPUdaarpY7Ybz3l6bZ/3N2GPnA6cPW6PiZw0xOFEBz0XxzOv/mmF7ug8xBF/ka4MRw==",
+  "dgSpecHash": "AsXwC68YgWYs8B9hWaf9hzsry/fDfLyZRgBiO8VcvMjOYsRAdz6gkmXoTpmRkIkTEK0ZIgncIET/VPRftFI7IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
+  "projectFilePath": "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Влад\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Влад\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

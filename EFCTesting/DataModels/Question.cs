@@ -10,7 +10,7 @@ namespace EFCTesting.DataModels
     public class Question
     {
         public int QuestionID { get; set; }
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string Quest { get; set; }
         public ICollection<Answer> Answer { get; set; }
     }

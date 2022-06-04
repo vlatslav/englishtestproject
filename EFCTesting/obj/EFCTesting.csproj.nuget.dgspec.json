@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj": {}
+    "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj": {
+    "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
         "projectName": "EFCTesting",
-        "projectPath": "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
+        "projectPath": "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
         "packagesPath": "C:\\Users\\Влад\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Влад\\Source\\Repos\\englishtestproject\\EFCTesting\\obj\\",
+        "outputPath": "C:\\Users\\Влад\\source\\repos\\englishtestproject\\EFCTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

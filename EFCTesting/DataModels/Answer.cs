@@ -10,8 +10,8 @@ namespace EFCTesting.DataModels
     public class Answer
     {
         public int AnswerID { get; set; }
-        [MaxLength(20)]
+        [MaxLength(40)]
         public string Answ { get; set; }
-        public string Correct { get; set; }
+        public bool Correct { get; set; }
     }
 }
