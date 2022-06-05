@@ -31,7 +31,6 @@ namespace EFCTesting.Repository
             return await _context.Answers.ToListAsync();
         }
 
-
         public async Task<Answer> GetByid(int id)
         {
             return await _context.Answers.FirstOrDefaultAsync(u => u.AnswerID == id);

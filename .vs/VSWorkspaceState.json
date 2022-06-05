@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EFCTesting",
-    "\\EFCTesting\\Entity"
+    "\\EnglishApp_WinForm",
+    "\\EnglishApp_WinForm\\EnglishApp_WinForm",
+    "\\RGROP"
   ],
-  "SelectedNode": "\\EFCTesting\\Entity\\EnglishContext.cs",
+  "SelectedNode": "\\EnglishApp_WinForm\\EnglishApp_WinForm\\Form3.cs",
   "PreviewInSolutionExplorer": false
 }
