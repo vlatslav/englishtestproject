@@ -27,7 +27,7 @@ namespace EnglishApp_WinForm
         private IEnumerable<Question> res;
         private User user;
 
-        public Form3(int testid, int userid, User user)
+        public Form3(int testid, int userid)
         {
             this.user = user;
             this.testid = testid;
@@ -39,7 +39,7 @@ namespace EnglishApp_WinForm
         }
         private void btn_returntomainClick(object sender, EventArgs e)
         {
-            Form form2 = new Form2(userid, user);
+            Form form2 = new Form2(userid);
             form2.Show();
             this.Hide();
         }

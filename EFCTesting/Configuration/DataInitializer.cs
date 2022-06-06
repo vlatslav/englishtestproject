@@ -1259,6 +1259,419 @@ namespace EFCTesting.Configuration
                             }
                         }
                         }
+                    },
+                    new Test
+                    {
+                        Done = false,
+                        Progress = 0,
+                        Questions = new List<Question>()
+                        {
+                        new Question()
+                        {
+                            Quest = "When Sam was a small child, he _______ spend hours every day playing with stones in the garden.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "wide",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "broad",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "large",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "open",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "She invested a lot of time _____ researching the most appropriate university course.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "to",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "for",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "with",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "in",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The police claimed that they acted in self _____.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "interest",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "confidence",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "defence",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "discipline",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "I _____ remember putting my briefcase down on that shelf.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "deeply",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "entirely",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "clearly",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "strongly",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "He turned _____ to be considerably older than I had imagined.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "over",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "up",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "out",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "round",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The windows in this house are in urgent _____ of replacement.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "Not wanting",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "As not wanting",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "She didn't want",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Because not wanting",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Speed cameras _____ shown to reduce accidents.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "have",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "were being",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "have been",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "are being",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Life is a _____ deal easier for immigrants who can speak the local language.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "far",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "huge",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "big",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "great",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The experiment _____ testing people’s responses before and after drinking coffee.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "contained",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "incorporated",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "involved",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "consisted",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "We may be a bit late. We’re _____ in a traffic jam.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "buried",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "stuck",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "blocked",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "surrounded",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Having _____ his driving test several times, Paul finally passed at the fourth attempt.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "taken",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "made",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "had",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "attended",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Gospel music has been a major influence _____ other musical styles, especially soul.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "with",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "to",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "about",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "on",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Maintaining an accurate balance sheet is essential. _____ business you’re in.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "however",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "wherever",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "whatever",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "whenever",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "It’s _____ likely that this novel will win a literary prize.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "totally",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "deeply",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "strongly",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "highly",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "It’s no __________ for me to get Brad’s phone number - I’ll be seeing him tonight.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "point",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "wonder",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "secret",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "problem",
+                                    Correct = true,
+                                }
+                            }
+                        }
+                        }
                     }
                     );
                     context.SaveChanges();

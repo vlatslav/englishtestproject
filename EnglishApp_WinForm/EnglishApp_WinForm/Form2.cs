@@ -19,21 +19,46 @@ namespace EnglishApp_WinForm
         private UnitOfWork unitOfWork = new UnitOfWork(englishContext);
         private User user;
 
-        public Form2(int userid, User user)
+        public Form2(int userid)
         {
             this.userid = userid;
             InitializeComponent();
-            initDB(user);
+            initDB();
             btn_submit.Hide();
             pnl_click.Hide();
+            pnl_progress.Hide();
+            pnl_progressbar.Hide();
+            lbl_progress.Hide();
         }
 
-        private async void initDB(User user)
-        { 
+        private async void initDB()
+        {
+            float result;
+            englishContext = new EnglishContext();
+            unitOfWork = new UnitOfWork(englishContext);
             user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
-            if (user.Tests.ElementAt(0).Done) percentT1.Text = (user.Tests.ElementAt(0).Progress / 15).ToString("#0.00") + "%";
-            if (user.Tests.ElementAt(1).Done) percentT2.Text = (user.Tests.ElementAt(1).Progress / 15).ToString("#0.00") + "%";
-            if (user.Tests.ElementAt(2).Done) percentT3.Text = (user.Tests.ElementAt(2).Progress / 15).ToString("#0.00") + "%";
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    result = (float)user.Tests.ElementAt(i).Progress / 15 * 100;
+            //    switch (i)
+            //    {
+            //        case 0:
+            //            if (user.Tests.ElementAt(i).Done) percentT1.Text = result.ToString("#0.00") + "%";
+            //            break;
+            //        case 1:
+            //            if (user.Tests.ElementAt(i).Done) percentT2.Text = result.ToString("#0.00") + "%";
+            //            break;
+            //        case 2:
+            //            if (user.Tests.ElementAt(i).Done) percentT3.Text = result.ToString("#0.00") + "%";
+            //            break;
+            //        case 3:
+            //            if (user.Tests.ElementAt(i).Done) percentT4.Text = result.ToString("#0.00") + "%";
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //}
 
             // ADD MORE TESTS //
 
@@ -50,6 +75,41 @@ namespace EnglishApp_WinForm
             button = (Button)sender;
             button.BackColor = SystemColors.Control;
             button.ForeColor = Color.Black;
+            lbl_progress.Show();
+            pnl_progressbar.Show();
+            float cur_progress = 0;
+            switch (button.Name)
+            {
+                case "button1":
+                    cur_progress = (float)user.Tests.ElementAt(0).Progress;
+                    break;
+                case "button2":
+                    cur_progress = (float)user.Tests.ElementAt(1).Progress;
+                    break;
+                case "button3":
+                    cur_progress = (float)user.Tests.ElementAt(2).Progress;
+                    break;
+                case "button4":
+                    // ADD TEST
+                    //cur_progress = (float)user.Tests.ElementAt(3).Progress;
+                    break;
+                case "button5":
+                    //cur_progress = (float)user.Tests.ElementAt(4).Progress;
+                    break;
+                default:
+                    break;
+            }
+            float max_mark = 15;
+            float percentage = cur_progress / max_mark * 100;
+            if (cur_progress == max_mark)
+                pnl_progress.Width = pnl_progressbar.Width;
+            else
+            {
+                int pnlWidth = (int)pnl_progressbar.Width / 100 * (int)percentage;
+                pnl_progress.Width = pnlWidth;
+            }
+            pnl_progress.BringToFront();
+            pnl_progress.Show();
         }
 
         private void buttonOFF(object sender, EventArgs e)
@@ -67,7 +127,7 @@ namespace EnglishApp_WinForm
 
         private void btn_submit_Click(object sender, EventArgs e)
         {
-            Form form3 = new Form3(testid, userid, user);
+            Form form3 = new Form3(testid, userid);
             this.Hide();
             form3.Show();
         }
