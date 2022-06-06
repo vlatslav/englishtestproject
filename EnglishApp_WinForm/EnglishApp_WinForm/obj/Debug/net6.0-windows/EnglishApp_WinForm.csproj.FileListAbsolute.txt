@@ -1,40 +1,6 @@
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.exe
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.deps.json
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.runtimeconfig.json
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.dll
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.pdb
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.AssemblyReference.cache
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Test.resources
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Properties.Resources.resources
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.GenerateResource.cache
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfoInputs.cache
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfo.cs
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.CoreCompileInputs.cache
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.dll
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\refint\EnglishApp_WinForm.dll
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.pdb
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.genruntimeconfig.cache
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\ref\EnglishApp_WinForm.dll
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form2.resources
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form3.resources
-C:\Users\olegm\Desktop\ІКНІ\ООП 2 семестр\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form4.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.AssemblyReference.cache
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Test.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form2.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form3.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form4.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Properties.Resources.resources
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.GenerateResource.cache
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfoInputs.cache
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfo.cs
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.CoreCompileInputs.cache
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.dll
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\ref\EnglishApp_WinForm.dll
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.pdb
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.deps.json
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.runtimeconfig.json
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.runtimeconfig.dev.json
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.exe
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.exe
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EnglishApp_WinForm.deps.json
@@ -78,6 +44,19 @@ C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.dll
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.pdb
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.AssemblyReference.cache
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Test.resources
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form2.resources
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form3.resources
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form4.resources
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Properties.Resources.resources
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.GenerateResource.cache
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfoInputs.cache
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.AssemblyInfo.cs
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.CoreCompileInputs.cache
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.csproj.CopyComplete
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.dll
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\ref\EnglishApp_WinForm.dll
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.pdb
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.genruntimeconfig.cache
-C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\bin\Debug\net6.0-windows\EFCTesting.runtimeconfig.dev.json
