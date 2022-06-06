@@ -5798,24 +5798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Huntah\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\olegm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huntah\\Desktop\\Stuff\\Work\\IT\\RGR\\EFCTesting\\EFCTesting.csproj",
+      "projectUniqueName": "C:\\Users\\olegm\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
       "projectName": "EFCTesting",
-      "projectPath": "C:\\Users\\Huntah\\Desktop\\Stuff\\Work\\IT\\RGR\\EFCTesting\\EFCTesting.csproj",
-      "packagesPath": "C:\\Users\\Huntah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huntah\\Desktop\\Stuff\\Work\\IT\\RGR\\EFCTesting\\obj\\",
+      "projectPath": "C:\\Users\\olegm\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
+      "packagesPath": "C:\\Users\\olegm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olegm\\source\\repos\\englishtestproject\\EFCTesting\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Huntah\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\olegm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5879,7 +5874,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
+            "version": "[5.0.16, 5.0.16]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
@@ -5895,7 +5890,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
