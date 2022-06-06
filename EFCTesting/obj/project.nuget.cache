@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p/8h42bIhbfHZsJwo7VRFiz72FyWV8KKM4yEnFDN1+iVS/3rwhbXkO8NA/rl/o7zKKLG11/KCfpxAjm5gDmvKg==",
+  "dgSpecHash": "ksvJMEeRi/OApOonqUBf1mw7QxfBx3g3eYZBlxveWcZ15x+oSOmhEAjCh1ORotpIcE5GzWD3TPX9w9opM6HQzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\olegm\\source\\repos\\englishtestproject\\EFCTesting\\EFCTesting.csproj",
   "expectedPackageFiles": [
@@ -100,11 +100,7 @@
     "C:\\Users\\olegm\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\olegm\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\olegm\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\olegm\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\olegm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512",
-    "C:\\Users\\olegm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\olegm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\olegm\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\olegm\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

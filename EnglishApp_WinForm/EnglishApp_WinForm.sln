@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishApp_WinForm", "EnglishApp_WinForm\EnglishApp_WinForm.csproj", "{4A150AB8-F84B-4BCA-B531-643DCBA0A028}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishTest_Forms", "EnglishTest_Forms\EnglishTest_Forms.csproj", "{177DA6F4-8CBB-4726-B501-715118D52F27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCTesting", "..\EFCTesting\EFCTesting.csproj", "{2CB4FC7A-78EA-4094-B277-670D0DCFD02E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A150AB8-F84B-4BCA-B531-643DCBA0A028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A150AB8-F84B-4BCA-B531-643DCBA0A028}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A150AB8-F84B-4BCA-B531-643DCBA0A028}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A150AB8-F84B-4BCA-B531-643DCBA0A028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177DA6F4-8CBB-4726-B501-715118D52F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177DA6F4-8CBB-4726-B501-715118D52F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177DA6F4-8CBB-4726-B501-715118D52F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177DA6F4-8CBB-4726-B501-715118D52F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB4FC7A-78EA-4094-B277-670D0DCFD02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB4FC7A-78EA-4094-B277-670D0DCFD02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB4FC7A-78EA-4094-B277-670D0DCFD02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB4FC7A-78EA-4094-B277-670D0DCFD02E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
