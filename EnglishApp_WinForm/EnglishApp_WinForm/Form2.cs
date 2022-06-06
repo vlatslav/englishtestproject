@@ -7,19 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EFCTesting.DataModels;
+using EFCTesting.UOW;
 
 namespace EnglishApp_WinForm
 {
     public partial class Form2 : Form
     {
-        private int testid = 0;
-        public Form2()
+        private int testid, userid;
+        private static EnglishContext englishContext = new EnglishContext();
+        private UnitOfWork unitOfWork = new UnitOfWork(englishContext);
+        private User user;
+
+        public Form2(int userid, User user)
         {
+            this.userid = userid;
             InitializeComponent();
+            initDB(user);
             btn_submit.Hide();
             pnl_click.Hide();
         }
 
+        private async void initDB(User user)
+        { 
+            user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
+            if (user.Tests.ElementAt(0).Done) percentT1.Text = (user.Tests.ElementAt(0).Progress / 15).ToString("#0.00") + "%";
+            if (user.Tests.ElementAt(1).Done) percentT2.Text = (user.Tests.ElementAt(1).Progress / 15).ToString("#0.00") + "%";
+            if (user.Tests.ElementAt(2).Done) percentT3.Text = (user.Tests.ElementAt(2).Progress / 15).ToString("#0.00") + "%";
+
+            // ADD MORE TESTS //
+
+        }
         private void btn_submit_MouseOFF(object sender, EventArgs e)
         {
             btn_submit.BackColor = Color.FromArgb(83, 70, 131);
@@ -49,7 +67,7 @@ namespace EnglishApp_WinForm
 
         private void btn_submit_Click(object sender, EventArgs e)
         {
-            Form form3 = new Form3(testid);
+            Form form3 = new Form3(testid, userid, user);
             this.Hide();
             form3.Show();
         }

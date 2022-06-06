@@ -1,68 +1,93 @@
+using EFCTesting.Configuration;
+using EFCTesting.DataModels;
 using EFCTesting.Repository;
+using EFCTesting.UOW;
+using Microsoft.Data.SqlClient;
 
 namespace EnglishApp_WinForm
 {
     public partial class Test : Form
     {
+        public string username;
+        private static EnglishContext englishContext = new EnglishContext();
+        private UnitOfWork unitOfWork = new UnitOfWork(englishContext);
+        private IEnumerable<User> res;
+
         public Test()
         {
             InitializeComponent();
-            this.Size = new Size(1042,600);
-        
+            initUserDB();
+            this.Size = new Size(1042, 600);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonON(object sender, EventArgs e)
         {
-
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = SystemColors.Control;
+            button.ForeColor = Color.Black;
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void buttonOFF(object sender, EventArgs e)
         {
-
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = Color.FromArgb(83, 70, 131);
+            button.ForeColor = Color.White;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private async void initUserDB()
         {
-
+            res = await unitOfWork.UserRepository.GetAllWithDetails();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
         private void button1_Click(object sender, EventArgs e)
         {
-            string username;
             username = textBox1.Text;
-            Form2 form = new Form2();
+            var iter = res.GetEnumerator();
+            iter.Reset();
+            while (iter.MoveNext())
+            {
+                if (username == iter.Current.NickName)
+                {
+                    Form2 form = new Form2(iter.Current.UserID, res.FirstOrDefault(x => x.UserID == iter.Current.UserID));
+                    this.Hide();
+                    form.Show();
+                    return;
+                }
+            }
+
+            MessageBox.Show("Such username doesn't exist!");
+        }
+
+        private async void btn_create_Click(object sender, EventArgs e)
+        {
+            username = textBox1.Text;
+            var iter = res.GetEnumerator();
+            iter.Reset();
+            while (iter.MoveNext())
+            {
+                if (username == iter.Current.NickName)
+                {
+                    MessageBox.Show("Such username alread exists! Please sign in with it.");
+                    return;
+                }
+            }
+
+            var t = await unitOfWork.TestRepository.GetAll();
+            var tests = englishContext.Tests;
+            var u = new User();
+            u.NickName = username;
+            foreach (var item in t.ToList()) item.Users.Add(u);
+            await unitOfWork.UserRepository.Add(u);
+            await unitOfWork.Update();
+            foreach (var i in res) unitOfWork.UserRepository.Update(i);
+            await unitOfWork.Update();
+            res = await unitOfWork.UserRepository.GetAllWithDetails();
+
+            Form2 formi = new Form2(res.Last().UserID, res.FirstOrDefault(x => x.UserID == res.Last().UserID));
             this.Hide();
-            form.Show();
+            formi.Show();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Test_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_submit_MouseOFF(object sender, EventArgs e)
-        {
-            btn_submit.BackgroundImage = BackgroundImage;
-            btn_submit.ForeColor = Color.FromArgb(83, 70, 131);
-            
-        }
-
-        private void btn_submit_MouseOn(object sender, EventArgs e)
-        {
-            btn_submit.BackColor = SystemColors.Control;
-            btn_submit.BackgroundImage = null;
-            btn_submit.ForeColor = Color.Black;
-        }
-
-
     }
 }

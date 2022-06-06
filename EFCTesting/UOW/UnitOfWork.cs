@@ -70,5 +70,10 @@ namespace EFCTesting.UOW
         {
             await _context.SaveChangesAsync();
         }
+
+        public void Save()
+        {
+            _context.SaveChanges();
+        }
     }
 }

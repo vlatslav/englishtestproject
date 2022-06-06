@@ -33,12 +33,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_submit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.percentT5 = new System.Windows.Forms.Label();
+            this.percentT4 = new System.Windows.Forms.Label();
+            this.percentT3 = new System.Windows.Forms.Label();
+            this.percentT2 = new System.Windows.Forms.Label();
+            this.percentT1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnl_click = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +91,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.percentT5);
+            this.panel1.Controls.Add(this.percentT4);
+            this.panel1.Controls.Add(this.percentT3);
+            this.panel1.Controls.Add(this.percentT2);
+            this.panel1.Controls.Add(this.percentT1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -95,6 +107,66 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 382);
             this.panel1.TabIndex = 12;
+            // 
+            // percentT5
+            // 
+            this.percentT5.AutoSize = true;
+            this.percentT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.percentT5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.percentT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.percentT5.Image = ((System.Drawing.Image)(resources.GetObject("percentT5.Image")));
+            this.percentT5.Location = new System.Drawing.Point(221, 330);
+            this.percentT5.Name = "percentT5";
+            this.percentT5.Size = new System.Drawing.Size(0, 21);
+            this.percentT5.TabIndex = 18;
+            // 
+            // percentT4
+            // 
+            this.percentT4.AutoSize = true;
+            this.percentT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.percentT4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.percentT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.percentT4.Image = ((System.Drawing.Image)(resources.GetObject("percentT4.Image")));
+            this.percentT4.Location = new System.Drawing.Point(221, 254);
+            this.percentT4.Name = "percentT4";
+            this.percentT4.Size = new System.Drawing.Size(0, 21);
+            this.percentT4.TabIndex = 17;
+            // 
+            // percentT3
+            // 
+            this.percentT3.AutoSize = true;
+            this.percentT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.percentT3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.percentT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.percentT3.Image = ((System.Drawing.Image)(resources.GetObject("percentT3.Image")));
+            this.percentT3.Location = new System.Drawing.Point(221, 178);
+            this.percentT3.Name = "percentT3";
+            this.percentT3.Size = new System.Drawing.Size(0, 21);
+            this.percentT3.TabIndex = 16;
+            // 
+            // percentT2
+            // 
+            this.percentT2.AutoSize = true;
+            this.percentT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.percentT2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.percentT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.percentT2.Image = ((System.Drawing.Image)(resources.GetObject("percentT2.Image")));
+            this.percentT2.Location = new System.Drawing.Point(221, 102);
+            this.percentT2.Name = "percentT2";
+            this.percentT2.Size = new System.Drawing.Size(0, 21);
+            this.percentT2.TabIndex = 15;
+            // 
+            // percentT1
+            // 
+            this.percentT1.AutoSize = true;
+            this.percentT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.percentT1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.percentT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.percentT1.Image = ((System.Drawing.Image)(resources.GetObject("percentT1.Image")));
+            this.percentT1.Location = new System.Drawing.Point(221, 26);
+            this.percentT1.Name = "percentT1";
+            this.percentT1.Size = new System.Drawing.Size(0, 21);
+            this.percentT1.TabIndex = 14;
             // 
             // button5
             // 
@@ -186,6 +258,15 @@
             this.pnl_click.Size = new System.Drawing.Size(6, 45);
             this.pnl_click.TabIndex = 13;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(214, 381);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "label2";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -201,6 +282,7 @@
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +300,11 @@
         private Button button2;
         private Button button5;
         private Button button4;
+        private Label percentT1;
+        private Label percentT5;
+        private Label percentT4;
+        private Label percentT3;
+        private Label percentT2;
+        private Label label2;
     }
 }

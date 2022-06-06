@@ -21,14 +21,17 @@ namespace EnglishApp_WinForm
         private List<int> button_sequence = new List<int>();
         private List<int> index_sequence = new List<int>();
         private List<int> correct_sequence = new List<int>();
-        private int correct_counter = 0, _tick, current_index = 0, testid;
+        private int correct_counter = 0, _tick, current_index = 0, testid, userid;
         private bool dbLoaded = false;
         private List<Answer> answ;
         private IEnumerable<Question> res;
+        private User user;
 
-        public Form3(int testid)
+        public Form3(int testid, int userid, User user)
         {
+            this.user = user;
             this.testid = testid;
+            this.userid = userid;
             InitializeComponent();
             randomIndex(15);
             randomButtons(4);
@@ -36,7 +39,7 @@ namespace EnglishApp_WinForm
         }
         private void btn_returntomainClick(object sender, EventArgs e)
         {
-            Form form2 = new Form2();
+            Form form2 = new Form2(userid, user);
             form2.Show();
             this.Hide();
         }
@@ -215,10 +218,10 @@ namespace EnglishApp_WinForm
         }
         private void buttonNxt_Click(object sender, EventArgs e)
         {
-            if (current_index == 14)
+            if (current_index == 0)
             {
                 buttonNxt.Visible = false;
-                Form form4 = new Form4(correct_counter, testid);
+                Form form4 = new Form4(correct_counter, testid, userid);
                 this.Close();
                 form4.Show();
                 return;
