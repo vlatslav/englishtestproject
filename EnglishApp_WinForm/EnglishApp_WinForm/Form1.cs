@@ -50,7 +50,7 @@ namespace EnglishApp_WinForm
             {
                 if (username == iter.Current.NickName)
                 {
-                    Form2 form = new Form2(iter.Current.UserID, res.FirstOrDefault(x => x.UserID == iter.Current.UserID));
+                    Form2 form = new Form2(iter.Current.UserID);
                     this.Hide();
                     form.Show();
                     return;
@@ -85,7 +85,7 @@ namespace EnglishApp_WinForm
             await unitOfWork.Update();
             res = await unitOfWork.UserRepository.GetAllWithDetails();
 
-            Form2 formi = new Form2(res.Last().UserID, res.FirstOrDefault(x => x.UserID == res.Last().UserID));
+            Form2 formi = new Form2(res.Last().UserID);
             this.Hide();
             formi.Show();
         }

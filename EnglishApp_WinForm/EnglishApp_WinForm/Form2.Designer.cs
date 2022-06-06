@@ -1,4 +1,6 @@
-﻿namespace EnglishApp_WinForm
+﻿using System.Windows.Forms;
+
+namespace EnglishApp_WinForm
 {
     partial class Form2
     {
@@ -32,19 +34,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_submit = new System.Windows.Forms.Button();
+            this.pnl_click = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.percentT5 = new System.Windows.Forms.Label();
-            this.percentT4 = new System.Windows.Forms.Label();
-            this.percentT3 = new System.Windows.Forms.Label();
-            this.percentT2 = new System.Windows.Forms.Label();
-            this.percentT1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pnl_click = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pnl_progressbar = new System.Windows.Forms.Panel();
+            this.pnl_progress = new System.Windows.Forms.Panel();
+            this.lbl_progress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -89,14 +88,18 @@
             this.btn_submit.MouseEnter += new System.EventHandler(this.btn_submit_MouseOn);
             this.btn_submit.MouseLeave += new System.EventHandler(this.btn_submit_MouseOFF);
             // 
+            // pnl_click
+            // 
+            this.pnl_click.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_click.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnl_click.Location = new System.Drawing.Point(273, 8);
+            this.pnl_click.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_click.Name = "pnl_click";
+            this.pnl_click.Size = new System.Drawing.Size(4, 74);
+            this.pnl_click.TabIndex = 13;
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.percentT5);
-            this.panel1.Controls.Add(this.percentT4);
-            this.panel1.Controls.Add(this.percentT3);
-            this.panel1.Controls.Add(this.percentT2);
-            this.panel1.Controls.Add(this.percentT1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -108,66 +111,6 @@
             this.panel1.Size = new System.Drawing.Size(261, 382);
             this.panel1.TabIndex = 12;
             // 
-            // percentT5
-            // 
-            this.percentT5.AutoSize = true;
-            this.percentT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentT5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.percentT5.ForeColor = System.Drawing.SystemColors.Control;
-            this.percentT5.Image = ((System.Drawing.Image)(resources.GetObject("percentT5.Image")));
-            this.percentT5.Location = new System.Drawing.Point(221, 330);
-            this.percentT5.Name = "percentT5";
-            this.percentT5.Size = new System.Drawing.Size(0, 21);
-            this.percentT5.TabIndex = 18;
-            // 
-            // percentT4
-            // 
-            this.percentT4.AutoSize = true;
-            this.percentT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentT4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.percentT4.ForeColor = System.Drawing.SystemColors.Control;
-            this.percentT4.Image = ((System.Drawing.Image)(resources.GetObject("percentT4.Image")));
-            this.percentT4.Location = new System.Drawing.Point(221, 254);
-            this.percentT4.Name = "percentT4";
-            this.percentT4.Size = new System.Drawing.Size(0, 21);
-            this.percentT4.TabIndex = 17;
-            // 
-            // percentT3
-            // 
-            this.percentT3.AutoSize = true;
-            this.percentT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentT3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.percentT3.ForeColor = System.Drawing.SystemColors.Control;
-            this.percentT3.Image = ((System.Drawing.Image)(resources.GetObject("percentT3.Image")));
-            this.percentT3.Location = new System.Drawing.Point(221, 178);
-            this.percentT3.Name = "percentT3";
-            this.percentT3.Size = new System.Drawing.Size(0, 21);
-            this.percentT3.TabIndex = 16;
-            // 
-            // percentT2
-            // 
-            this.percentT2.AutoSize = true;
-            this.percentT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentT2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.percentT2.ForeColor = System.Drawing.SystemColors.Control;
-            this.percentT2.Image = ((System.Drawing.Image)(resources.GetObject("percentT2.Image")));
-            this.percentT2.Location = new System.Drawing.Point(221, 102);
-            this.percentT2.Name = "percentT2";
-            this.percentT2.Size = new System.Drawing.Size(0, 21);
-            this.percentT2.TabIndex = 15;
-            // 
-            // percentT1
-            // 
-            this.percentT1.AutoSize = true;
-            this.percentT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentT1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.percentT1.ForeColor = System.Drawing.SystemColors.Control;
-            this.percentT1.Image = ((System.Drawing.Image)(resources.GetObject("percentT1.Image")));
-            this.percentT1.Location = new System.Drawing.Point(221, 26);
-            this.percentT1.Name = "percentT1";
-            this.percentT1.Size = new System.Drawing.Size(0, 21);
-            this.percentT1.TabIndex = 14;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
@@ -177,7 +120,7 @@
             this.button5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(261, 76);
-            this.button5.TabIndex = 9;
+            this.button5.TabIndex = 4;
             this.button5.Text = "Button1";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button_Click);
@@ -193,7 +136,7 @@
             this.button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(261, 76);
-            this.button4.TabIndex = 8;
+            this.button4.TabIndex = 9;
             this.button4.Text = "Button1";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button_Click);
@@ -209,7 +152,7 @@
             this.button3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(261, 76);
-            this.button3.TabIndex = 6;
+            this.button3.TabIndex = 8;
             this.button3.Text = "Button1";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button_Click);
@@ -225,7 +168,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(261, 76);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Button1";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button_Click);
@@ -241,37 +184,50 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(261, 76);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Button1";
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Button";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button_Click);
             this.button1.MouseEnter += new System.EventHandler(this.buttonON);
             this.button1.MouseLeave += new System.EventHandler(this.buttonOFF);
             // 
-            // pnl_click
+            // pnl_progressbar
             // 
-            this.pnl_click.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_click.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnl_click.Location = new System.Drawing.Point(274, 8);
-            this.pnl_click.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnl_click.Name = "pnl_click";
-            this.pnl_click.Size = new System.Drawing.Size(6, 45);
-            this.pnl_click.TabIndex = 13;
+            this.pnl_progressbar.Location = new System.Drawing.Point(599, 18);
+            this.pnl_progressbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_progressbar.Name = "pnl_progressbar";
+            this.pnl_progressbar.Size = new System.Drawing.Size(219, 29);
+            this.pnl_progressbar.TabIndex = 14;
             // 
-            // label2
+            // pnl_progress
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(214, 381);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "label2";
+            this.pnl_progress.BackColor = System.Drawing.Color.SpringGreen;
+            this.pnl_progress.Location = new System.Drawing.Point(599, 18);
+            this.pnl_progress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_progress.Name = "pnl_progress";
+            this.pnl_progress.Size = new System.Drawing.Size(52, 29);
+            this.pnl_progress.TabIndex = 15;
+            // 
+            // lbl_progress
+            // 
+            this.lbl_progress.AutoSize = true;
+            this.lbl_progress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
+            this.lbl_progress.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_progress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_progress.Location = new System.Drawing.Point(486, 20);
+            this.lbl_progress.Name = "lbl_progress";
+            this.lbl_progress.Size = new System.Drawing.Size(102, 30);
+            this.lbl_progress.TabIndex = 17;
+            this.lbl_progress.Text = "Progress:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 413);
+            this.Controls.Add(this.lbl_progress);
+            this.Controls.Add(this.pnl_progress);
+            this.Controls.Add(this.pnl_progressbar);
             this.Controls.Add(this.pnl_click);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_submit);
@@ -282,7 +238,6 @@
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,18 +248,16 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Button btn_submit;
-        private Panel panel1;
-        private Button button1;
         private Panel pnl_click;
+
+        private Panel panel1;
+        private Button button4;
         private Button button3;
         private Button button2;
+        private Button button1;
         private Button button5;
-        private Button button4;
-        private Label percentT1;
-        private Label percentT5;
-        private Label percentT4;
-        private Label percentT3;
-        private Label percentT2;
-        private Label label2;
+        private Panel pnl_progressbar;
+        private Panel pnl_progress;
+        private Label lbl_progress;
     }
 }
