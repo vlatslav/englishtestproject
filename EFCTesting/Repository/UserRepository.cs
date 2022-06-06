@@ -19,7 +19,7 @@ namespace EFCTesting.Repository
 
         public async Task Add(User entity)
         {
-            entity.Tests = _context.Tests.ToList();
+            //entity.Tests = _context.Tests.ToList();
             await _context.Users.AddAsync(entity);
         }
 
@@ -41,10 +41,10 @@ namespace EFCTesting.Repository
         public async Task<IEnumerable<User>> GetAllWithDetails()
         {
             return await _context.Users
-                .Include(u => u.Tests)
-                .ThenInclude(u => u.Questions)
-                .ThenInclude(u => u.Answer)
-                .ToArrayAsync();
+                .Include(x => x.Tests)
+                .ThenInclude(x => x.Test)
+                .ThenInclude(x => x.Questions)
+                .ToArrayAsync(); 
         }
 
         public async Task<User> GetByid(int id)

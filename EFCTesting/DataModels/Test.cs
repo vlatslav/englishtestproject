@@ -12,6 +12,6 @@ namespace EFCTesting.DataModels
         public int Progress { get; set; }
         public bool Done { get; set; }
         public ICollection<Question> Questions { get; set; }
-        public List<User> Users { get; set; } = new List<User>();
+        public List<TestUser> Users { get; set; }
     }
 }

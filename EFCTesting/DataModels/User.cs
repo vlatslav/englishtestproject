@@ -10,6 +10,6 @@ namespace EFCTesting.DataModels
     {
         public int UserID { get; set; }
         public string NickName { get; set; }
-        public List<Test> Tests { get; set; } = new List<Test>();
+        public List<TestUser> Tests { get; set; }
     }
 }

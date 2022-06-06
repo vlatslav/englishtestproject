@@ -4,14 +4,16 @@ using EFCTesting.DataModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFCTesting.Migrations
 {
     [DbContext(typeof(EnglishContext))]
-    partial class EnglishContextModelSnapshot : ModelSnapshot
+    [Migration("20220606160413_Test")]
+    partial class Test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -82,21 +84,6 @@ namespace EFCTesting.Migrations
                     b.ToTable("Tests");
                 });
 
-            modelBuilder.Entity("EFCTesting.DataModels.TestUser", b =>
-                {
-                    b.Property<int>("TestId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("TestId", "UserId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("TestUser");
-                });
-
             modelBuilder.Entity("EFCTesting.DataModels.User", b =>
                 {
                     b.Property<int>("UserID")
@@ -110,6 +97,21 @@ namespace EFCTesting.Migrations
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TestUser", b =>
+                {
+                    b.Property<int>("TestsTestID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsersUserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("TestsTestID", "UsersUserID");
+
+                    b.HasIndex("UsersUserID");
+
+                    b.ToTable("TestUser");
                 });
 
             modelBuilder.Entity("EFCTesting.DataModels.Answer", b =>
@@ -126,23 +128,19 @@ namespace EFCTesting.Migrations
                         .HasForeignKey("TestID");
                 });
 
-            modelBuilder.Entity("EFCTesting.DataModels.TestUser", b =>
+            modelBuilder.Entity("TestUser", b =>
                 {
-                    b.HasOne("EFCTesting.DataModels.Test", "Test")
-                        .WithMany("Users")
-                        .HasForeignKey("TestId")
+                    b.HasOne("EFCTesting.DataModels.Test", null)
+                        .WithMany()
+                        .HasForeignKey("TestsTestID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EFCTesting.DataModels.User", "User")
-                        .WithMany("Tests")
-                        .HasForeignKey("UserId")
+                    b.HasOne("EFCTesting.DataModels.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersUserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Test");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EFCTesting.DataModels.Question", b =>
@@ -153,13 +151,6 @@ namespace EFCTesting.Migrations
             modelBuilder.Entity("EFCTesting.DataModels.Test", b =>
                 {
                     b.Navigation("Questions");
-
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("EFCTesting.DataModels.User", b =>
-                {
-                    b.Navigation("Tests");
                 });
 #pragma warning restore 612, 618
         }

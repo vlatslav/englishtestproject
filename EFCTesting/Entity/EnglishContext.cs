@@ -14,6 +14,7 @@ namespace EFCTesting.DataModels
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<TestUser> TestUser { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -22,6 +23,30 @@ namespace EFCTesting.DataModels
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<TestUser>()
+                .HasKey(t => new { t.TestId, t.UserId });
+
+            modelBuilder.Entity<TestUser>()
+                .HasOne(pt => pt.User)
+                .WithMany(p => p.Tests)
+                .HasForeignKey(pt => pt.UserId);
+                
+            modelBuilder.Entity<TestUser>()
+                .HasOne(pt => pt.Test)
+                .WithMany(t => t.Users)
+                .HasForeignKey(pt => pt.TestId);
+
+            //modelBuilder
+            //    .Entity<User>()
+            //    .HasMany(p => p.Tests)
+            //    .WithMany(p => p.Users)
+            //    .UsingEntity(j => j.ToTable("TestUser"));
+            //.Map(cs =>
+            //  {
+            //            cs.MapLeftKey("StudentRefId");
+            //            cs.MapRightKey("CourseRefId");
+            //            cs.ToTable("StudentCourse");
+            //});
         }
 
     }
