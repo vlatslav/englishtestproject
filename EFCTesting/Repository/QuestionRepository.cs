@@ -47,6 +47,7 @@ namespace EFCTesting.Repository
             var quest = _context.Question.FirstOrDefault(u => u.QuestionID == question.QuestionID);
             quest.Quest = question.Quest;
             quest.Answer = question.Answer;
+            quest.TestID = question.TestID;
         }
     }
 }

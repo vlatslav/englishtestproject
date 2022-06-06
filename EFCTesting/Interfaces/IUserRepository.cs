@@ -11,6 +11,7 @@ namespace EFCTesting.Interfaces
     public interface IUserRepository : IRepository<User>
     {
         void DeleteById(int id);
+        void SaveChanges();
         Task<IEnumerable<User>> GetAllWithDetails();
     }
 }

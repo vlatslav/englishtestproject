@@ -57,5 +57,10 @@ namespace EFCTesting.Repository
             var result = _context.Users.FirstOrDefault(u => u.UserID == question.UserID);
             result.NickName = question.NickName;
         }
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
+        }
     }
 }

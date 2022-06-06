@@ -51,10 +51,10 @@ namespace EFCTesting.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Quest")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TestID")
+                    b.Property<int>("TestID")
+                        .HasMaxLength(100)
                         .HasColumnType("int");
 
                     b.HasKey("QuestionID");
@@ -123,7 +123,9 @@ namespace EFCTesting.Migrations
                 {
                     b.HasOne("EFCTesting.DataModels.Test", null)
                         .WithMany("Questions")
-                        .HasForeignKey("TestID");
+                        .HasForeignKey("TestID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EFCTesting.DataModels.TestUser", b =>
