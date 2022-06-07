@@ -59,7 +59,7 @@ namespace EnglishApp_WinForm
             if (user.Tests.ElementAt(testid - 1).Progress < counter) user.Tests.ElementAt(testid - 1).Progress = counter;
             user.Tests.ElementAt(testid - 1).Done = true;
 
-
+            unitOfWork.TestUserRepository.Update(user.Tests.ElementAt(testid - 1));
             unitOfWork.UserRepository.Update(user);
             await unitOfWork.Update();
         }
