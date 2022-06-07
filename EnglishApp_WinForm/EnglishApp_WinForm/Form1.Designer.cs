@@ -44,7 +44,7 @@
             this.lbl_greeting.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_greeting.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_greeting.Image = ((System.Drawing.Image)(resources.GetObject("lbl_greeting.Image")));
-            this.lbl_greeting.Location = new System.Drawing.Point(33, 156);
+            this.lbl_greeting.Location = new System.Drawing.Point(133, 142);
             this.lbl_greeting.Name = "lbl_greeting";
             this.lbl_greeting.Size = new System.Drawing.Size(745, 28);
             this.lbl_greeting.TabIndex = 0;
@@ -53,10 +53,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(378, 215);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(377, 208);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
+            this.textBox1.Size = new System.Drawing.Size(230, 29);
             this.textBox1.TabIndex = 1;
             // 
             // btn_submit
@@ -114,7 +114,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Name = "Test";
-            this.Text = "Form1";
+            this.Text = "UTA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

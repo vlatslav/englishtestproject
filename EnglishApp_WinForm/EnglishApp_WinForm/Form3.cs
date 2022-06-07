@@ -22,7 +22,7 @@ namespace EnglishApp_WinForm
         private List<int> index_sequence = new List<int>();
         private List<int> correct_sequence = new List<int>();
         private List<int> incorrect_sequence = new List<int>();
-        private int correct_counter = 0, _tick, current_index = 0, testid, userid, questionstaken = 3;
+        private int correct_counter = 0, _tick, current_index = 0, testid, userid, questionstaken = 15;
         private bool dbLoaded = false;
         private List<Answer> answ;
         private IEnumerable<Question> res;

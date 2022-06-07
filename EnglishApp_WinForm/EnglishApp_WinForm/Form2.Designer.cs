@@ -44,6 +44,8 @@ namespace EnglishApp_WinForm
             this.pnl_progressbar = new System.Windows.Forms.Panel();
             this.pnl_progress = new System.Windows.Forms.Panel();
             this.lbl_progress = new System.Windows.Forms.Label();
+            this.btn_leaderboard = new System.Windows.Forms.Button();
+            this.btn_signout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,14 +63,13 @@ namespace EnglishApp_WinForm
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(345, 121);
+            this.label1.Location = new System.Drawing.Point(303, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 126);
+            this.label1.Size = new System.Drawing.Size(541, 168);
             this.label1.TabIndex = 8;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -121,7 +122,7 @@ namespace EnglishApp_WinForm
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(261, 76);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Button1";
+            this.button5.Text = "Test 5";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button_Click);
             this.button5.MouseEnter += new System.EventHandler(this.buttonON);
@@ -137,7 +138,7 @@ namespace EnglishApp_WinForm
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(261, 76);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Button1";
+            this.button4.Text = "Test 4";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button_Click);
             this.button4.MouseEnter += new System.EventHandler(this.buttonON);
@@ -153,7 +154,7 @@ namespace EnglishApp_WinForm
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(261, 76);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Button1";
+            this.button3.Text = "Test 3";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button_Click);
             this.button3.MouseEnter += new System.EventHandler(this.buttonON);
@@ -169,7 +170,7 @@ namespace EnglishApp_WinForm
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(261, 76);
             this.button2.TabIndex = 6;
-            this.button2.Text = "Button1";
+            this.button2.Text = "Test 2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button_Click);
             this.button2.MouseEnter += new System.EventHandler(this.buttonON);
@@ -185,7 +186,7 @@ namespace EnglishApp_WinForm
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(261, 76);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Button";
+            this.button1.Text = "Test 1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button_Click);
             this.button1.MouseEnter += new System.EventHandler(this.buttonON);
@@ -220,11 +221,45 @@ namespace EnglishApp_WinForm
             this.lbl_progress.TabIndex = 17;
             this.lbl_progress.Text = "Progress:";
             // 
+            // btn_leaderboard
+            // 
+            this.btn_leaderboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
+            this.btn_leaderboard.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_leaderboard.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_leaderboard.Location = new System.Drawing.Point(416, 332);
+            this.btn_leaderboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_leaderboard.Name = "btn_leaderboard";
+            this.btn_leaderboard.Size = new System.Drawing.Size(297, 53);
+            this.btn_leaderboard.TabIndex = 18;
+            this.btn_leaderboard.Text = "Leaderboard";
+            this.btn_leaderboard.UseVisualStyleBackColor = false;
+            this.btn_leaderboard.Click += new System.EventHandler(this.btn_leaderboard_Click);
+            this.btn_leaderboard.MouseEnter += new System.EventHandler(this.ldrbuttonON);
+            this.btn_leaderboard.MouseLeave += new System.EventHandler(this.buttonOFF);
+            // 
+            // btn_signout
+            // 
+            this.btn_signout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
+            this.btn_signout.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_signout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_signout.Location = new System.Drawing.Point(785, 380);
+            this.btn_signout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_signout.Name = "btn_signout";
+            this.btn_signout.Size = new System.Drawing.Size(72, 33);
+            this.btn_signout.TabIndex = 19;
+            this.btn_signout.Text = "Вихід";
+            this.btn_signout.UseVisualStyleBackColor = false;
+            this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
+            this.btn_signout.MouseEnter += new System.EventHandler(this.buttonON);
+            this.btn_signout.MouseLeave += new System.EventHandler(this.buttonOFF);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 413);
+            this.Controls.Add(this.btn_signout);
+            this.Controls.Add(this.btn_leaderboard);
             this.Controls.Add(this.lbl_progress);
             this.Controls.Add(this.pnl_progress);
             this.Controls.Add(this.pnl_progressbar);
@@ -235,7 +270,7 @@ namespace EnglishApp_WinForm
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "UTA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -259,5 +294,7 @@ namespace EnglishApp_WinForm
         private Panel pnl_progressbar;
         private Panel pnl_progress;
         private Label lbl_progress;
+        private Button btn_leaderboard;
+        private Button btn_signout;
     }
 }

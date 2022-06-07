@@ -42,7 +42,6 @@ namespace EnglishApp_WinForm
         {
             btn_submit.BackColor = Color.FromArgb(83, 70, 131);
             btn_submit.ForeColor = Color.White;
-            
         }
         private void buttonON(object sender, EventArgs e)
         {
@@ -50,8 +49,7 @@ namespace EnglishApp_WinForm
             button = (Button)sender;
             button.BackColor = SystemColors.Control;
             button.ForeColor = Color.Black;
-            //var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
-            
+
             lbl_progress.Show();
             pnl_progressbar.Show();
             float cur_progress = 0;
@@ -107,6 +105,28 @@ namespace EnglishApp_WinForm
             Form form3 = new Form3(testid, userid);
             this.Hide();
             form3.Show();
+        }
+
+        private void btn_leaderboard_Click(object sender, EventArgs e)
+        {
+            Form form6 = new Form6(userid);
+            this.Hide();
+            form6.Show();
+        }
+
+        private void ldrbuttonON(object sender, EventArgs e)
+        {
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = SystemColors.Control;
+            button.ForeColor = Color.Black;
+        }
+
+        private void btn_signout_Click(object sender, EventArgs e)
+        {
+            Test form1 = new Test();
+            this.Close();
+            form1.Show();
         }
 
         private void button_Click(object sender, EventArgs e)

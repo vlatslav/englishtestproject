@@ -30,7 +30,7 @@ namespace EnglishApp_WinForm
             switch (testid)
             {
                 case 1:
-                    lbl_test.Text = "Test1.Name";
+                    lbl_test.Text = "Test 1 finished";
                     break;
                 case 2:
                     lbl_test.Text = "Test2.Name";
@@ -55,7 +55,6 @@ namespace EnglishApp_WinForm
         {
             user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
 
-            //var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test).ElementAt(testid - 1);
             if (user.Tests.ElementAt(testid - 1).Progress < counter) user.Tests.ElementAt(testid - 1).Progress = counter;
             user.Tests.ElementAt(testid - 1).Done = true;
 
@@ -74,6 +73,21 @@ namespace EnglishApp_WinForm
             Form form5 = new Form5(testid, userid, incorrect_sequence);
             form5.Show();
             this.Hide();
+        }
+        private void buttonOFF(object sender, EventArgs e)
+        {
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = Color.FromArgb(83, 70, 131);
+            button.ForeColor = Color.White;
+        }
+
+        private void buttonON(object sender, EventArgs e)
+        {
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = SystemColors.Control;
+            button.ForeColor = Color.Black;
         }
     }
 }

@@ -57,11 +57,12 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(385, 124);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(784, 270);
             this.label1.TabIndex = 0;
+            this.label1.Text = "ss";
             // 
             // flowLayoutPanel1
             // 
@@ -189,9 +190,8 @@
             this.Controls.Add(this.btn_returntomain);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "UTA";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
