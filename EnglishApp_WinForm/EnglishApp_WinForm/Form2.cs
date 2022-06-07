@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EFCTesting.DataModels;
+using EFCTesting.Migrations;
 using EFCTesting.UOW;
 
 namespace EnglishApp_WinForm
@@ -49,20 +50,21 @@ namespace EnglishApp_WinForm
             button = (Button)sender;
             button.BackColor = SystemColors.Control;
             button.ForeColor = Color.Black;
-            var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
+            //var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
+            
             lbl_progress.Show();
             pnl_progressbar.Show();
             float cur_progress = 0;
             switch (button.Name)
             {
                 case "button1":
-                    cur_progress = (float)test.ElementAt(0).Progress;
+                    cur_progress = (float)user.Tests.ElementAt(0).Progress;
                     break;
                 case "button2":
-                    cur_progress = (float)test.ElementAt(1).Progress;
+                    cur_progress = (float)user.Tests.ElementAt(0).Progress;
                     break;
                 case "button3":
-                    cur_progress = (float)test.ElementAt(2).Progress;
+                    cur_progress = (float)user.Tests.ElementAt(0).Progress;
                     break;
                 case "button4":
                     // ADD TEST
