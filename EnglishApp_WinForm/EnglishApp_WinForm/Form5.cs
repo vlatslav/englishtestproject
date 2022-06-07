@@ -14,25 +14,28 @@ using EFCTesting.UOW;
 
 namespace EnglishApp_WinForm
 {
-    public partial class Form3 : Form
+    public partial class Form5 : Form
     {
         private static EnglishContext englishContext = new EnglishContext();
         private UnitOfWork unitOfWork = new UnitOfWork(englishContext);
         private List<int> button_sequence = new List<int>();
-        private List<int> index_sequence = new List<int>();
         private List<int> correct_sequence = new List<int>();
         private List<int> incorrect_sequence = new List<int>();
-        private int correct_counter = 0, _tick, current_index = 0, testid, userid, questionstaken = 3;
+        private List<int> newincorrect_sequence = new List<int>();
+        private int correct_counter = 0, _tick, current_index = 0, testid, userid;
         private bool dbLoaded = false;
         private List<Answer> answ;
         private IEnumerable<Question> res;
-        public Form3(int testid, int userid)
+        private User user;
+
+        public Form5(int testid, int userid, List<int> incorrect_sequence)
         {
+            this.incorrect_sequence = incorrect_sequence;
             this.testid = testid;
             this.userid = userid;
             InitializeComponent();
-            randomIndex(15);
             randomButtons(4);
+            for(int i =0;i<incorrect_sequence.Count();i++) correct_sequence.Add(0);
             showTest();
         }
         private void btn_returntomainClick(object sender, EventArgs e)
@@ -66,8 +69,8 @@ namespace EnglishApp_WinForm
                 res = res.OrderBy(x => x.TestID);
                 dbLoaded = true;
             }
-            answ = res.ElementAt((testid - 1) * 15 + index_sequence[current_index]).Answer.ToList();
-            label1.Text = res.ElementAt((testid - 1) * 15 + index_sequence[current_index]).Quest;
+            answ = res.ElementAt(incorrect_sequence[current_index]).Answer.ToList();
+            label1.Text = res.ElementAt(incorrect_sequence[current_index]).Quest;
             buttonA.Text = answ[button_sequence[0]].Answ;
             buttonB.Text = answ[button_sequence[1]].Answ;
             buttonC.Text = answ[button_sequence[2]].Answ;
@@ -91,25 +94,6 @@ namespace EnglishApp_WinForm
                 button_sequence.Add(t);
             }
         }
-        private void randomIndex(int num)
-        {
-            int i, index;
-            index = new Random().Next(0, num);
-            for (i = 0; i < num; i++)
-            {
-                for (int j = 0; j < index_sequence.Count(); j++)
-                {
-                    if (index_sequence[j] != index)
-                    {
-                        continue;
-                    }
-                    j = -1;
-                    index = new Random().Next(0, num);
-                }
-                correct_sequence.Add(0);
-                index_sequence.Add(index);
-            }
-        }
 
         private void correctAnswerCheck(Button b1, Button b2, Button b3, Button b4, int a, int b, int c, int d)
         {
@@ -128,7 +112,7 @@ namespace EnglishApp_WinForm
                 buttonBack.Enabled = false;
                 timerNext.Start();
                 buttonNxt.Text = "3";
-                incorrect_sequence.Add((testid - 1) * 15 + index_sequence[current_index]);
+                newincorrect_sequence.Add(incorrect_sequence[current_index]);
             }
         }
         private void showAnsweredButtons()
@@ -217,10 +201,10 @@ namespace EnglishApp_WinForm
         }
         private void buttonNxt_Click(object sender, EventArgs e)
         {
-            if (current_index == questionstaken - 1)
+            if (current_index == incorrect_sequence.Count() - 1)
             {
                 buttonNxt.Visible = false;
-                Form form4 = new Form4(correct_counter, testid, userid, incorrect_sequence, questionstaken);
+                Form form4 = new Form4(correct_counter, testid, userid, newincorrect_sequence, incorrect_sequence.Count());
                 this.Close();
                 form4.Show();
                 return;

@@ -60,3 +60,4 @@ C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\ref\EnglishApp_WinForm.dll
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.pdb
 C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.genruntimeconfig.cache
+C:\Users\Huntah\Desktop\Stuff\Work\IT\RGR\EnglishApp_WinForm\EnglishApp_WinForm\obj\Debug\net6.0-windows\EnglishApp_WinForm.Form5.resources

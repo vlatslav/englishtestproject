@@ -1,6 +1,6 @@
 ﻿namespace EnglishApp_WinForm
 {
-    partial class Form3
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -79,7 +79,6 @@
             // buttonA
             // 
             this.buttonA.BackColor = System.Drawing.Color.White;
-            this.buttonA.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonA.Location = new System.Drawing.Point(3, 2);
             this.buttonA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonA.Name = "buttonA";
@@ -176,7 +175,7 @@
             this.timerNext.Interval = 1000;
             this.timerNext.Tick += new System.EventHandler(this.timerNext_Tick);
             // 
-            // Form3
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +187,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btn_returntomain);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form3";
+            this.Name = "Form5";
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

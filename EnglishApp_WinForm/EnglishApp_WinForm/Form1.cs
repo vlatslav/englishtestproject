@@ -82,14 +82,10 @@ namespace EnglishApp_WinForm
 
             var t = await unitOfWork.TestRepository.GetAll();
             var tests = englishContext.Tests;
-            var u = new TestUser();
-            u.User.NickName = username;
-            //u.NickName = username;
+            var u = new User();
+            u.NickName = username;
 
-            foreach (var item in t.ToList()) item.Users.Add(u);
-            await unitOfWork.UserRepository.Add(u.User);
-            await unitOfWork.Update();
-            foreach (var i in res) unitOfWork.UserRepository.Update(i);
+            await unitOfWork.UserRepository.Add(u);
             await unitOfWork.Update();
             res = await unitOfWork.UserRepository.GetAllWithDetails();
 
