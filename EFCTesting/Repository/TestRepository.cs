@@ -44,9 +44,8 @@ namespace EFCTesting.Repository
 
         public void Update(Test question)
         {
-            var result = _context.Tests.FirstOrDefault(u => u.TestID == question.TestID);
-            result.Questions = question.Questions;
-            result.Users = question.Users;
+            _context.Entry(question).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }

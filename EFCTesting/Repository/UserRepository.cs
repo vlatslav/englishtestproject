@@ -57,8 +57,8 @@ namespace EFCTesting.Repository
 
         public void Update(User question)
         {
-            var result = _context.Users.FirstOrDefault(u => u.UserID == question.UserID);
-            result.NickName = question.NickName;
+            _context.Entry(question).State = EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public void SaveChanges()

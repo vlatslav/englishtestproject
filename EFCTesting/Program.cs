@@ -19,15 +19,20 @@ namespace EFCTesting
                 //context
                 UnitOfWork uow = new UnitOfWork(context);
 
-                var user = new User()
-                {
-                    NickName = "Vova"
-                };
-                await uow.UserRepository.Add(user);
-                await uow.Update();
+                var user = context.Users.FirstOrDefault(x => x.UserID == 1);
+                user.NickName = "dsadsadsa";
+                uow.UserRepository.Update(user);
 
-                var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
-                var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
+
+                //var user = new User()
+                //{
+                //    NickName = "Vova"
+                //};
+                //await uow.UserRepository.Add(user);
+                //await uow.Update();
+
+                //var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
+                //var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
             }
         }
     }

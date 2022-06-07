@@ -1,5 +1,6 @@
 ﻿using EFCTesting.DataModels;
 using EFCTesting.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,19 @@ namespace EFCTesting.Repository
         {
             _context = context;
         }
-        public Task Add(TestUser entity)
+        public async Task Add(TestUser entity)
         {
-            throw new NotImplementedException();
+            await _context.TestUser.AddAsync(entity);
         }
 
         public void Delete(TestUser entity)
         {
-            throw new NotImplementedException();
+            _context.TestUser.Remove(entity);
         }
 
-        public Task<IEnumerable<TestUser>> GetAll()
+        public async Task<IEnumerable<TestUser>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _context.TestUser.ToArrayAsync();
         }
 
         public Task<TestUser> GetByid(int id)
@@ -37,9 +38,7 @@ namespace EFCTesting.Repository
 
         public void Update(TestUser question)
         {
-            var result = _context.TestUser.FirstOrDefault(x => x.UserId == question.UserId && x.TestId == question.TestId);
-            result.Progress = question.Progress;
-            result.Done = question.Done;
+            _context.Entry(question).State = EntityState.Modified;
             _context.SaveChanges();
         }
     }
