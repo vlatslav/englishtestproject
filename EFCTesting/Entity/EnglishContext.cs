@@ -19,7 +19,7 @@ namespace EFCTesting.DataModels
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Server=HUNTAH;Database=EFDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=EFDB;Trusted_Connection=True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -36,17 +36,6 @@ namespace EFCTesting.DataModels
                 .WithMany(t => t.Users)
                 .HasForeignKey(pt => pt.TestId);
 
-            //modelBuilder
-            //    .Entity<User>()
-            //    .HasMany(p => p.Tests)
-            //    .WithMany(p => p.Users)
-            //    .UsingEntity(j => j.ToTable("TestUser"));
-            //.Map(cs =>
-            //  {
-            //            cs.MapLeftKey("StudentRefId");
-            //            cs.MapRightKey("CourseRefId");
-            //            cs.ToTable("StudentCourse");
-            //});
         }
 
     }

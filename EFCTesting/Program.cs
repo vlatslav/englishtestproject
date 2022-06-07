@@ -18,20 +18,13 @@ namespace EFCTesting
             {
                 //context
                 UnitOfWork uow = new UnitOfWork(context);
-                var user = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 1);
 
-                var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test).ElementAt(1);
-                test.Progress = 12;
-                test.Done = true;
-
-                uow.TestRepository.Update(test);
-                uow.UserRepository.Update(user);
+                var user = new User()
+                {
+                    NickName = "Vova"
+                };
+                await uow.UserRepository.Add(user);
                 await uow.Update();
-
-                var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
-                var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
-                foreach (var item in test2.ToList())
-                    Console.WriteLine(item.TestID + " " + item.Progress + " " + item.Done);
             }
         }
     }

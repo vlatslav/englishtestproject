@@ -9,8 +9,6 @@ namespace EFCTesting.DataModels
     public class Test
     {
         public int TestID { get; set; }
-        public int Progress { get; set; }
-        public bool Done { get; set; }
         public ICollection<Question> Questions { get; set; }
         public List<TestUser> Users { get; set; }
     }

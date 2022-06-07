@@ -19,7 +19,15 @@ namespace EFCTesting.Repository
 
         public async Task Add(User entity)
         {
-            //entity.Tests = _context.Tests.ToList();
+            var alltests = _context.Tests.ToList();
+            foreach (var item in alltests)
+            {
+                var testmod = new TestUser();
+                testmod.User = entity;
+                testmod.Test = item;
+                entity.Tests.Add(testmod);
+                
+            }
             await _context.Users.AddAsync(entity);
         }
 

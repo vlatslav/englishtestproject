@@ -22,8 +22,6 @@ namespace EFCTesting.Configuration
                     context.Tests.AddRange(
                         new Test
                         {
-                            Done = false,
-                            Progress = 0,
                             Questions = new List<Question>()
                         {
                         new Question()
@@ -436,8 +434,6 @@ namespace EFCTesting.Configuration
                         ,
                     new Test
                     {
-                        Done = false,
-                        Progress = 0,
                         Questions = new List<Question>()
                         {
                         new Question()
@@ -849,8 +845,6 @@ namespace EFCTesting.Configuration
                     },
                     new Test
                     {
-                        Done = false,
-                        Progress = 0,
                         Questions = new List<Question>()
                         {
                         new Question()
@@ -1262,8 +1256,6 @@ namespace EFCTesting.Configuration
                     },
                     new Test
                     {
-                        Done = false,
-                        Progress = 0,
                         Questions = new List<Question>()
                         {
                         new Question()

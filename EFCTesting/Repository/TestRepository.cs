@@ -45,8 +45,6 @@ namespace EFCTesting.Repository
         public void Update(Test question)
         {
             var result = _context.Tests.FirstOrDefault(u => u.TestID == question.TestID);
-            result.Progress = question.Progress;
-            result.Done = question.Done;
             result.Questions = question.Questions;
             result.Users = question.Users;
         }
