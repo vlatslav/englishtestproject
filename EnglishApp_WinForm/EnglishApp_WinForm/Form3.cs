@@ -218,7 +218,7 @@ namespace EnglishApp_WinForm
         }
         private void buttonNxt_Click(object sender, EventArgs e)
         {
-            if (current_index == 14)
+            if (current_index == 4)
             {
                 buttonNxt.Visible = false;
                 Form form4 = new Form4(correct_counter, testid, userid);

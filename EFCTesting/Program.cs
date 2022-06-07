@@ -30,8 +30,6 @@ namespace EFCTesting
 
                 var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
                 var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
-                foreach (var item in test2.ToList())
-                    Console.WriteLine(item.TestID + " " + item.Progress + " " + item.Done);
             }
         }
     }

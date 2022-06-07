@@ -43,7 +43,7 @@ namespace EnglishApp_WinForm
         {
             user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
 
-            var test = user.Tests.ElementAt(testid - 1);
+            var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test).ElementAt(testid - 1);
             if(test.Progress < counter) test.Progress = counter;
             test.Done = true;
 

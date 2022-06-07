@@ -35,18 +35,6 @@ namespace EFCTesting.DataModels
                 .HasOne(pt => pt.Test)
                 .WithMany(t => t.Users)
                 .HasForeignKey(pt => pt.TestId);
-
-            //modelBuilder
-            //    .Entity<User>()
-            //    .HasMany(p => p.Tests)
-            //    .WithMany(p => p.Users)
-            //    .UsingEntity(j => j.ToTable("TestUser"));
-            //.Map(cs =>
-            //  {
-            //            cs.MapLeftKey("StudentRefId");
-            //            cs.MapRightKey("CourseRefId");
-            //            cs.ToTable("StudentCourse");
-            //});
         }
 
     }
