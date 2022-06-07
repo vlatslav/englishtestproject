@@ -16,6 +16,7 @@ namespace EFCTesting.UOW
         public IQuestionRepository questionRepository;
         public IUserRepository userRepository;
         public ITestRepository testRepository;
+        public ITestUserRepository testUserRepository;
         public UnitOfWork(EnglishContext context)
         {
             _context = context;
@@ -63,6 +64,17 @@ namespace EFCTesting.UOW
                     testRepository = new TestRepository(_context);
                 }
                 return testRepository;
+            }
+        }
+        public ITestUserRepository TestUserRepository
+        {
+            get
+            {
+                if (testUserRepository is null)
+                {
+                    testUserRepository = new TestUserRepository(_context);
+                }
+                return testUserRepository;
             }
         }
 
