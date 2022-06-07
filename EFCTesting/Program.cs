@@ -14,7 +14,7 @@ namespace EFCTesting
         static async Task Main(string[] args)
         {
             new DataInitializer();
-            using (EnglishContext context = new EnglishContext())
+           /* using (EnglishContext context = new EnglishContext())
             {
                 //context
                 UnitOfWork uow = new UnitOfWork(context);
@@ -28,7 +28,7 @@ namespace EFCTesting
 
                 var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
                 var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
-            }
+            }*/
         }
     }
 }

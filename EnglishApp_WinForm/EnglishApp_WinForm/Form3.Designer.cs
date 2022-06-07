@@ -49,19 +49,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(10, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(14, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(817, 292);
+            this.panel1.Size = new System.Drawing.Size(934, 389);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(385, 124);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(23, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(44, 32);
             this.label1.TabIndex = 0;
+            this.label1.Text = "sss";
             // 
             // flowLayoutPanel1
             // 
@@ -70,20 +72,18 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonB);
             this.flowLayoutPanel1.Controls.Add(this.buttonC);
             this.flowLayoutPanel1.Controls.Add(this.buttonD);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 305);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 407);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(817, 37);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(934, 49);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // buttonA
             // 
             this.buttonA.BackColor = System.Drawing.Color.White;
             this.buttonA.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonA.Location = new System.Drawing.Point(3, 2);
-            this.buttonA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonA.Location = new System.Drawing.Point(3, 3);
             this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(198, 32);
+            this.buttonA.Size = new System.Drawing.Size(226, 43);
             this.buttonA.TabIndex = 0;
             this.buttonA.UseVisualStyleBackColor = false;
             this.buttonA.Click += new System.EventHandler(this.buttonA_Click);
@@ -91,10 +91,9 @@
             // buttonB
             // 
             this.buttonB.BackColor = System.Drawing.Color.White;
-            this.buttonB.Location = new System.Drawing.Point(207, 2);
-            this.buttonB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonB.Location = new System.Drawing.Point(235, 3);
             this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(198, 32);
+            this.buttonB.Size = new System.Drawing.Size(226, 43);
             this.buttonB.TabIndex = 1;
             this.buttonB.UseVisualStyleBackColor = false;
             this.buttonB.Click += new System.EventHandler(this.buttonB_Click);
@@ -102,10 +101,9 @@
             // buttonC
             // 
             this.buttonC.BackColor = System.Drawing.Color.White;
-            this.buttonC.Location = new System.Drawing.Point(411, 2);
-            this.buttonC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonC.Location = new System.Drawing.Point(467, 3);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(197, 32);
+            this.buttonC.Size = new System.Drawing.Size(225, 43);
             this.buttonC.TabIndex = 2;
             this.buttonC.UseVisualStyleBackColor = false;
             this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
@@ -113,10 +111,9 @@
             // buttonD
             // 
             this.buttonD.BackColor = System.Drawing.Color.White;
-            this.buttonD.Location = new System.Drawing.Point(614, 2);
-            this.buttonD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonD.Location = new System.Drawing.Point(698, 3);
             this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(200, 33);
+            this.buttonD.Size = new System.Drawing.Size(229, 44);
             this.buttonD.TabIndex = 3;
             this.buttonD.UseVisualStyleBackColor = false;
             this.buttonD.Click += new System.EventHandler(this.buttonD_Click);
@@ -128,10 +125,9 @@
             this.buttonNxt.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
             this.buttonNxt.FlatAppearance.BorderSize = 0;
             this.buttonNxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonNxt.Location = new System.Drawing.Point(746, 346);
-            this.buttonNxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonNxt.Location = new System.Drawing.Point(853, 461);
             this.buttonNxt.Name = "buttonNxt";
-            this.buttonNxt.Size = new System.Drawing.Size(82, 22);
+            this.buttonNxt.Size = new System.Drawing.Size(94, 29);
             this.buttonNxt.TabIndex = 0;
             this.buttonNxt.Text = ">>";
             this.buttonNxt.UseVisualStyleBackColor = false;
@@ -145,10 +141,9 @@
             this.buttonBack.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
             this.buttonBack.FlatAppearance.BorderSize = 0;
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonBack.Location = new System.Drawing.Point(10, 346);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonBack.Location = new System.Drawing.Point(11, 461);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(82, 22);
+            this.buttonBack.Size = new System.Drawing.Size(94, 29);
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "<<";
             this.buttonBack.UseVisualStyleBackColor = false;
@@ -160,10 +155,9 @@
             // 
             this.btn_returntomain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
             this.btn_returntomain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_returntomain.Location = new System.Drawing.Point(323, 343);
-            this.btn_returntomain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_returntomain.Location = new System.Drawing.Point(369, 457);
             this.btn_returntomain.Name = "btn_returntomain";
-            this.btn_returntomain.Size = new System.Drawing.Size(187, 28);
+            this.btn_returntomain.Size = new System.Drawing.Size(214, 37);
             this.btn_returntomain.TabIndex = 4;
             this.btn_returntomain.Text = "Back to the menu";
             this.btn_returntomain.UseVisualStyleBackColor = false;
@@ -178,16 +172,15 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
-            this.ClientSize = new System.Drawing.Size(838, 377);
+            this.ClientSize = new System.Drawing.Size(958, 503);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonNxt);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btn_returntomain);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form3";
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);

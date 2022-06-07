@@ -88,8 +88,15 @@ namespace EnglishApp_WinForm
             pnl_progress.BringToFront();
             pnl_progress.Show();
         }
+        private void LeaderbuttonON(object sender, EventArgs e)
+        {
+            var button = new Button();
+            button = (Button)sender;
+            button.BackColor = SystemColors.Control;
+            button.ForeColor = Color.Black;
+        }
 
-        private void buttonOFF(object sender, EventArgs e)
+            private void buttonOFF(object sender, EventArgs e)
         {
             var button = new Button();
             button = (Button)sender;
@@ -107,6 +114,18 @@ namespace EnglishApp_WinForm
             Form form3 = new Form3(testid, userid);
             this.Hide();
             form3.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_leaderboard_Click(object sender, EventArgs e)
+        {
+            Form form6 = new Form6();
+            this.Hide();
+            form6.Show();
         }
 
         private void button_Click(object sender, EventArgs e)

@@ -68,6 +68,7 @@ namespace EnglishApp_WinForm
             }
             answ = res.ElementAt((testid - 1) * 15 + index_sequence[current_index]).Answer.ToList();
             label1.Text = res.ElementAt((testid - 1) * 15 + index_sequence[current_index]).Quest;
+            
             buttonA.Text = answ[button_sequence[0]].Answ;
             buttonB.Text = answ[button_sequence[1]].Answ;
             buttonC.Text = answ[button_sequence[2]].Answ;
@@ -190,6 +191,11 @@ namespace EnglishApp_WinForm
             if (correct_sequence[current_index] != 0) return;
             correctAnswerCheck(buttonB, buttonA, buttonC, buttonD, button_sequence[0], button_sequence[2], button_sequence[3], button_sequence[1]);
             correct_sequence[current_index] = 2;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void buttonC_Click(object sender, EventArgs e)

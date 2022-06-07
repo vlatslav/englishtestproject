@@ -46,18 +46,19 @@
             this.lbl_greeting.Image = ((System.Drawing.Image)(resources.GetObject("lbl_greeting.Image")));
             this.lbl_greeting.Location = new System.Drawing.Point(33, 156);
             this.lbl_greeting.Name = "lbl_greeting";
-            this.lbl_greeting.Size = new System.Drawing.Size(745, 28);
+            this.lbl_greeting.Size = new System.Drawing.Size(951, 35);
             this.lbl_greeting.TabIndex = 0;
             this.lbl_greeting.Text = "Greetings! Welcome to our testing app. In order to begin let us know your usernam" +
     "e";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(378, 215);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
+            this.textBox1.Size = new System.Drawing.Size(230, 34);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btn_submit
             // 
@@ -101,7 +102,7 @@
             // 
             // Test
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;

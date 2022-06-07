@@ -18,6 +18,8 @@ namespace EnglishApp_WinForm
             InitializeComponent();
             initUserDB();
             this.Size = new Size(1042, 600);
+            
+
         }
 
         private void buttonON(object sender, EventArgs e)
@@ -92,6 +94,11 @@ namespace EnglishApp_WinForm
             Form2 formi = new Form2(res.Last().UserID);
             this.Hide();
             formi.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
