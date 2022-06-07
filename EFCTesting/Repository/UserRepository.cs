@@ -1,10 +1,8 @@
 ﻿using EFCTesting.DataModels;
 using EFCTesting.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EFCTesting.Repository
@@ -22,14 +20,7 @@ namespace EFCTesting.Repository
             var alltests = _context.Tests.ToList();
             foreach (var item in alltests)
             {
-                var testmod = new TestUser();
-                testmod.User = entity;
-                testmod.Test = item;
-
-                entity.Tests.Add(testmod);
-
-                testmod.Progress = 0;
-                testmod.Done = false;
+                var testmod = new TestUser(){User = entity, Test = item };
                 entity.Tests.Add(testmod);
             }
             await _context.Users.AddAsync(entity);

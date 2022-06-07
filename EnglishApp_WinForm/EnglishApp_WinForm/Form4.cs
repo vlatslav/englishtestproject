@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EFCTesting.DataModels;
+using EFCTesting.Migrations;
 using EFCTesting.UOW;
 
 namespace EnglishApp_WinForm
@@ -54,12 +55,11 @@ namespace EnglishApp_WinForm
         {
             user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
 
-            var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test).ElementAt(testid - 1);
-            if (test.Progress < counter) test.Progress = counter;
-            test.Done = true;
+            //var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test).ElementAt(testid - 1);
+            if (user.Tests.ElementAt(testid - 1).Progress < counter) user.Tests.ElementAt(testid - 1).Progress = counter;
+            user.Tests.ElementAt(testid - 1).Done = true;
 
-            unitOfWork.TestRepository.Update(test);
-            await unitOfWork.Update();
+
             unitOfWork.UserRepository.Update(user);
             await unitOfWork.Update();
         }
