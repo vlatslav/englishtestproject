@@ -33,35 +33,9 @@ namespace EnglishApp_WinForm
 
         private async void initDB()
         {
-            float result;
             englishContext = new EnglishContext();
             unitOfWork = new UnitOfWork(englishContext);
             user = (await unitOfWork.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == userid);
-
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    result = (float)user.Tests.ElementAt(i).Progress / 15 * 100;
-            //    switch (i)
-            //    {
-            //        case 0:
-            //            if (user.Tests.ElementAt(i).Done) percentT1.Text = result.ToString("#0.00") + "%";
-            //            break;
-            //        case 1:
-            //            if (user.Tests.ElementAt(i).Done) percentT2.Text = result.ToString("#0.00") + "%";
-            //            break;
-            //        case 2:
-            //            if (user.Tests.ElementAt(i).Done) percentT3.Text = result.ToString("#0.00") + "%";
-            //            break;
-            //        case 3:
-            //            if (user.Tests.ElementAt(i).Done) percentT4.Text = result.ToString("#0.00") + "%";
-            //            break;
-            //        default:
-            //            break;
-            //    }
-            //}
-
-            // ADD MORE TESTS //
-
         }
         private void btn_submit_MouseOFF(object sender, EventArgs e)
         {
@@ -75,19 +49,20 @@ namespace EnglishApp_WinForm
             button = (Button)sender;
             button.BackColor = SystemColors.Control;
             button.ForeColor = Color.Black;
+            var test = user.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
             lbl_progress.Show();
             pnl_progressbar.Show();
             float cur_progress = 0;
             switch (button.Name)
             {
                 case "button1":
-                    cur_progress = (float)user.Tests.ElementAt(0).Progress;
+                    cur_progress = (float)test.ElementAt(0).Progress;
                     break;
                 case "button2":
-                    cur_progress = (float)user.Tests.ElementAt(1).Progress;
+                    cur_progress = (float)test.ElementAt(1).Progress;
                     break;
                 case "button3":
-                    cur_progress = (float)user.Tests.ElementAt(2).Progress;
+                    cur_progress = (float)test.ElementAt(2).Progress;
                     break;
                 case "button4":
                     // ADD TEST

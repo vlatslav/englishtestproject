@@ -25,6 +25,12 @@ namespace EFCTesting
                 };
                 await uow.UserRepository.Add(user);
                 await uow.Update();
+<<<<<<< HEAD
+=======
+
+                var user_test = (await uow.UserRepository.GetAllWithDetails()).FirstOrDefault(x => x.UserID == 2);
+                var test2 = user_test.Tests.Where(x => x.UserId == user.UserID).Select(x => x.Test);
+>>>>>>> 20b3208bbb73b2d4381a67fc217a2a4857595408
             }
         }
     }
