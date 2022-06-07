@@ -35,10 +35,6 @@ namespace EFCTesting.DataModels
                 .HasOne(pt => pt.Test)
                 .WithMany(t => t.Users)
                 .HasForeignKey(pt => pt.TestId);
-<<<<<<< HEAD
-
-=======
->>>>>>> 20b3208bbb73b2d4381a67fc217a2a4857595408
         }
 
     }
