@@ -25,14 +25,12 @@ namespace EFCTesting.Repository
                 var testmod = new TestUser();
                 testmod.User = entity;
                 testmod.Test = item;
-<<<<<<< HEAD
+
                 entity.Tests.Add(testmod);
-                
-=======
-                testmod.Test.Progress = 0;
-                testmod.Test.Done = false;
+
+                testmod.Progress = 0;
+                testmod.Done = false;
                 entity.Tests.Add(testmod);
->>>>>>> 20b3208bbb73b2d4381a67fc217a2a4857595408
             }
             await _context.Users.AddAsync(entity);
         }
