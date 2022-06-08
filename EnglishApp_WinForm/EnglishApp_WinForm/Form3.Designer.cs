@@ -41,6 +41,7 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.btn_returntomain = new System.Windows.Forms.Button();
             this.timerNext = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(10, 9);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -58,9 +60,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 10);
+            this.label1.Location = new System.Drawing.Point(15, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(784, 270);
+            this.label1.Size = new System.Drawing.Size(784, 240);
             this.label1.TabIndex = 0;
             this.label1.Text = "ss";
             // 
@@ -177,6 +179,16 @@
             this.timerNext.Interval = 1000;
             this.timerNext.Tick += new System.EventHandler(this.timerNext_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(15, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -192,6 +204,7 @@
             this.Name = "Form3";
             this.Text = "UTA";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -210,5 +223,6 @@
         private Button btn_returntomain;
         private Label label1;
         private System.Windows.Forms.Timer timerNext;
+        private Label label2;
     }
 }

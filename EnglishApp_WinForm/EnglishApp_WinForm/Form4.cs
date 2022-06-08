@@ -29,14 +29,23 @@ namespace EnglishApp_WinForm
             lbl_result.Text = counter.ToString() + "/" + maxnumber.ToString() + " correct";
             switch (testid)
             {
+                case 0:
+                    lbl_test.Text = "Exercising complete";
+                    break;
                 case 1:
                     lbl_test.Text = "Test 1 finished";
                     break;
                 case 2:
-                    lbl_test.Text = "Test2.Name";
+                    lbl_test.Text = "Test 2 finished";
                     break;
                 case 3:
-                    lbl_test.Text = "Test3.Name";
+                    lbl_test.Text = "Test 3 finished";
+                    break;
+                case 4:
+                    lbl_test.Text = "Test 4 finished";
+                    break;
+                case 5:
+                    lbl_test.Text = "Test 5 finished";
                     break;
                 default:
                     break;
@@ -45,8 +54,8 @@ namespace EnglishApp_WinForm
             if (counter < maxnumber) lbl_passed_or_not.Text = "Nice";
             if (counter < maxnumber*0.8) lbl_passed_or_not.Text = "Good";
             if (counter < maxnumber*0.5) lbl_passed_or_not.Text = "Could be better";
-            if (counter < 0.25) lbl_passed_or_not.Text = "Are you even trying";
-            if (counter == 0) lbl_passed_or_not.Text = "Try harder next time";
+            if (counter < 0.25) lbl_passed_or_not.Text = "Try harder next time!";
+            if (counter == 0) lbl_passed_or_not.Text = "Are you even trying?";
 
             if (incorrect_sequence.Count > 0) button2.Visible = true;
             updDB(counter);
@@ -70,7 +79,7 @@ namespace EnglishApp_WinForm
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form5 = new Form5(testid, userid, incorrect_sequence);
+            Form form5 = new Form5(0, userid, incorrect_sequence);
             form5.Show();
             this.Hide();
         }

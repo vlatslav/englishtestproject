@@ -1664,8 +1664,418 @@ namespace EFCTesting.Configuration
                             }
                         }
                         }
-                    }
-                    );
+                    },
+                    new Test
+                    {
+                        Questions = new List<Question>()
+                        {
+                        new Question()
+                        {
+                            Quest = "Who would have thought that the great champion would have to withdraw from the Anatolian Rally because of a simple ______?",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "fluctuation",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "detonation",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "expulsion",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "puncture",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "I don't think that was a very _____ decision. You should've sent the documents through a courier service.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "crude",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "wise",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "unsafe",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "displeased",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "I daresay this man is _____ to stealing. He's never going to give it up.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "vulnerable",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "addicted",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "adaptable",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "unyielding",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "He was dismissed from service for his insistent ______.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "disobedience",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "unintelligibility",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "obedience",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "intelligibility",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The two brothers were living in ______ flats.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "permanent",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "accommodation",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "adjacent",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "unitarian",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Turkland was _____ a republic on October 29th, 1923.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "professed",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "proclaimed",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "prophecied",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "prosecuted",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The voter fills out the _____ at a nearby table and then places it in the box on the observer's table.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "electoral",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "suffrage",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "candidate",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "ballot",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The Queen of Sheba wore a robe ______ with diamonds and emeralds.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "adorned",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "curbed",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "loathed",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "maladjusted",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "______ were asked to choose between cavalry and infantry.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "Infants",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Aviators",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Recruits",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Veterans",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The report seems to ______ that a stiff resistance by the insurgents is to be expected.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "predict",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "present",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "prescribe",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "provoke",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "______ parents would want to see their children be educated in a least restrictive environment.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "Permissive",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Vigorous",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Extravagant",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "Incompetent",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Her husband passed away last month. She herself is ______ an incurable disease and is in intense pain.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "remonstrated with",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "affluent in terms of",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "afflicted with",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "overly acquisitive for",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The new teacher was overly ______ with her pupils. All the rest of us teachers stood aghast at their lack of discipline.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "intolerant",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "lenient",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "judicious",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "repulsive",
+                                    Correct = false,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "Finland is a(n) ______ nation. She is listed among the world's economically most competitive countries.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "insolvent",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "poverty-stricken",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "impoverished",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "affluent",
+                                    Correct = true,
+                                }
+                            }
+                        },
+                        new Question()
+                        {
+                            Quest = "The prisoner was put in solitary ______.",
+                            Answer = new List<Answer>()
+                            {
+                                new Answer
+                                {
+                                    Answ = "confinement",
+                                    Correct = true,
+                                },
+                                new Answer
+                                {
+                                    Answ = "endurance",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "destitude",
+                                    Correct = false,
+                                },
+                                new Answer
+                                {
+                                    Answ = "disfavour",
+                                    Correct = false,
+                                }
+                            }
+                        }
+                        }
+                    });
                     context.SaveChanges();
                 }
             }

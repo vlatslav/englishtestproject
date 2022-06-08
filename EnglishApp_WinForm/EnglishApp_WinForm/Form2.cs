@@ -65,11 +65,10 @@ namespace EnglishApp_WinForm
                     cur_progress = (float)user.Tests.ElementAt(2).Progress;
                     break;
                 case "button4":
-                    // ADD TEST
-                    //cur_progress = (float)user.Tests.ElementAt(3).Progress;
+                    cur_progress = (float)user.Tests.ElementAt(3).Progress;
                     break;
                 case "button5":
-                    //cur_progress = (float)user.Tests.ElementAt(4).Progress;
+                    cur_progress = (float)user.Tests.ElementAt(4).Progress;
                     break;
                 default:
                     break;

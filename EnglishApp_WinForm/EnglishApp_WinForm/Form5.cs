@@ -75,6 +75,7 @@ namespace EnglishApp_WinForm
             buttonB.Text = answ[button_sequence[1]].Answ;
             buttonC.Text = answ[button_sequence[2]].Answ;
             buttonD.Text = answ[button_sequence[3]].Answ;
+            label2.Text = (current_index + 1).ToString() + "/" + incorrect_sequence.Count();
         }
         private void randomButtons(int num)
         {
