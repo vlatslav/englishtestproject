@@ -414,7 +414,7 @@ namespace EFCTesting.Configuration
                                 },
                                 new Answer
                                 {
-                                    Answ = "It's not permitted to offe",
+                                    Answ = "It's not permitted to offer",
                                     Correct = false,
                                 },
                                 new Answer

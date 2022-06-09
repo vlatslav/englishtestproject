@@ -247,7 +247,7 @@ namespace EnglishApp_WinForm
             this.btn_signout.Name = "btn_signout";
             this.btn_signout.Size = new System.Drawing.Size(72, 33);
             this.btn_signout.TabIndex = 19;
-            this.btn_signout.Text = "Вихід";
+            this.btn_signout.Text = "Exit";
             this.btn_signout.UseVisualStyleBackColor = false;
             this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
             this.btn_signout.MouseEnter += new System.EventHandler(this.buttonON);

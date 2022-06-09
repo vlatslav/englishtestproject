@@ -54,7 +54,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(377, 208);
+            this.textBox1.Location = new System.Drawing.Point(401, 208);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 29);
             this.textBox1.TabIndex = 1;
@@ -64,7 +64,7 @@
             this.btn_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
             this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_submit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_submit.Location = new System.Drawing.Point(377, 260);
+            this.btn_submit.Location = new System.Drawing.Point(401, 260);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(231, 49);
             this.btn_submit.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.btn_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(70)))), ((int)(((byte)(131)))));
             this.btn_create.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_create.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_create.Location = new System.Drawing.Point(377, 326);
+            this.btn_create.Location = new System.Drawing.Point(401, 326);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(231, 49);
             this.btn_create.TabIndex = 4;

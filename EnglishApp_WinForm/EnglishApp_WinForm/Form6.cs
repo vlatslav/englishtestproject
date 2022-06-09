@@ -28,37 +28,48 @@ namespace EnglishApp_WinForm
 
         private async void initDB()
         {
+            englishContext = new EnglishContext();
+            unitOfWork = new UnitOfWork(englishContext);
             var user = await unitOfWork.UserRepository.GetAllWithDetails();
             var count = user.Select(x => new
                 { UserId = x.UserID, Count = x.Tests.Where(x => x.Done).Count() });
-            foreach (var i in count)
-            {
-                if (i.Count > 0) users.Add(i.UserId,i.Count);
-            }
             List<int> usersid = new List<int>();
             List<int> userscount = new List<int>();
-            int max, id;
-            users.GroupBy(x => x);
-            foreach (var i in users)
+            foreach (var i in count)
             {
-                max = i.Value;
-                id = i.Key;
-                foreach (var j in users)
+                if (i.Count > 0)
                 {
-                    if (i.Value < j.Value)
+                    usersid.Add(i.UserId);
+                    userscount.Add(i.Count);
+                }
+            }
+
+            int temp;
+            for (int i = 0; i < userscount.Count(); i++)
+            {
+                for (int j = 0; j < userscount.Count(); j++)
+                {
+                    if (userscount[i] > userscount[j])
                     {
-                        max = i.Value;
-                        id = i.Key;
+                        temp = userscount[i];
+                        userscount[i] = userscount[j];
+                        userscount[j] = temp;
+                        temp = usersid[i];
+                        usersid[i] = usersid[j];
+                        usersid[j] = temp;
                     }
                 }
-                userscount.Add(max);
-                usersid.Add(id);
             }
 
             for (int i = 0; i < 5; i++)
             {
                 var text = "---";
-                if (i < usersid.Count()) text = user.Where(u => u.UserID == usersid[i]).Select(x => x.NickName).First() + "                      " + userscount[i];
+                if (i < usersid.Count())
+                {
+                    text = user.Where(u => u.UserID == usersid[i]).Select(x => x.NickName).First();
+                    for (int j = 25 - text.Count(); j > 0; j--) text += " ";
+                    text += userscount[i];
+                }
                 switch (i)
                 {
                     case 0:

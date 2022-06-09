@@ -71,6 +71,8 @@ namespace EnglishApp_WinForm
                     cur_progress = (float)user.Tests.ElementAt(4).Progress;
                     break;
                 default:
+                    lbl_progress.Hide();
+                    pnl_progressbar.Hide();
                     break;
             }
             float max_mark = 15;
