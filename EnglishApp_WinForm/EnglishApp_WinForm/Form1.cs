@@ -63,9 +63,9 @@ namespace EnglishApp_WinForm
         private async void btn_create_Click(object sender, EventArgs e)
         {
             username = textBox1.Text;
-            if (username == "")
+            if (username.Count() < 5)
             {
-                MessageBox.Show("You can't create user without a name!");
+                MessageBox.Show("Username length must be at least 5 characters!");
                 return;
             }
 
